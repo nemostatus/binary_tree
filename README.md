@@ -39,4 +39,5 @@ class Node
 full binary tree = this type is when all branches have 2 nodes and the bottom row is all filled out
 A complete binary tree is a binary tree in which at every level, except possibly the last, has to be filled and all nodes are as far left as possible.
 
+I'm going to follow geekforgeeks tutorial on bst for this repo
 
