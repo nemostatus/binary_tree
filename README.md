@@ -21,6 +21,19 @@ snippet from stack overflow
 3 Find the purpose of bst
  One of the most important applications of the Binary tree is in the searching algorithm.
 4 Find out how to code a bst
+Here's a snippet  of code that is a class representing a node(from geeksforgeeks)
+
+class Node 
+{ 
+    constructor(data) 
+    { 
+        this.data = data; 
+        this.left = null; 
+        this.right = null; 
+    } 
+} 
+
+ Data is initialized with data which is passed when object for this node is created and left and right is set to null.
 5 types
 
 full binary tree = this type is when all branches have 2 nodes and the bottom row is all filled out
