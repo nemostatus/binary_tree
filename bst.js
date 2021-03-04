@@ -21,12 +21,17 @@ class BinarySearchTree{
         insertNode(node,newNode){
             //conditional to determine where the new node belongs on the bst
             if(newNode.data < node.data){
-                if(node.left === null){
+                if(node.left === null)
                     node.left = newNode
-                }
-                else{
+                
+                else
                     this.insertNode(node.left,newNode) //recursion 
-                }
             }
+              else{
+                  if(node.right ===null)
+                  node.right = newNode
+                  else
+                  this.insertNode(node.right,newNode)
+              }
         }
 }
