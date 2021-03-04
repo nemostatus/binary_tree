@@ -11,6 +11,13 @@ class BinarySearchTree{
         this.root =null
     }
     insert(data){
+        let newNode = new Node(data)
+        if(this.root ===null){
+            this.root === newNode
+        }
+        else{
+            this.insertNode(this.root,newNode) //not created yet
+        }
 
     } //this method will be responsible for adding a node to the bst
 }
