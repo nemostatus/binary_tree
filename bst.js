@@ -78,4 +78,9 @@ removeNode(node,key){ //so the params are node ===this.root and key===data so re
         return node
     }
 }
+findMinNode(node){
+if(node.left ===null)
+return node
+else return this.findMinNode(node.left)
+}
 }
