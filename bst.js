@@ -37,4 +37,7 @@ class BinarySearchTree{
                   this.insertNode(node.right,newNode) //compare right branch to new node
               }
         }
+        remove(data){
+            this.root = removeNode(this.root, data)
+        }
 }
