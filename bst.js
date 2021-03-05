@@ -40,4 +40,18 @@ class BinarySearchTree{
         remove(data){
             this.root = removeNode(this.root, data)
         }
+        // it recur over the tree to find the 
+// data and removes it 
+removeNode(node,key){
+    if(node===null)
+        return null //if the root is null then return null 
+    else if(key<node.data){
+        node.left =this.removeNode(node.left,key)
+        return node
+    }
+      else if(key>node.data){
+        node.right =this.removeNode(node.right,key)
+        return node
+    }
+}
 }
