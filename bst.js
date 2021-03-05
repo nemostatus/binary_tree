@@ -91,4 +91,9 @@ else return this.findMinNode(node.left)
 getRootNode(){
     return this.root
 }
+
+search(node,data){
+    if(node ===null)
+    return null
+}
 }
