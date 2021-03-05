@@ -72,15 +72,23 @@ removeNode(node,key){ //so the params are node ===this.root and key===data so re
             node= node.left 
             return node
         }
+        // Deleting node with two children 
+        // minumum node of the right subtree 
+        // is stored in aux
         let aux = this.findMinNode(node.right)
         node.data =aux.data
         node.right = this.removeNode(node.right,aux.data)
         return node
     }
 }
-findMinNode(node){
+findMinNode(node){    // if left of a node is null 
+    // then it must be minimum node 
 if(node.left ===null)
 return node
 else return this.findMinNode(node.left)
+}
+
+getRootNode(){
+    return this.root
 }
 }
