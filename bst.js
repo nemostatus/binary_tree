@@ -62,6 +62,14 @@ removeNode(node,key){
             node =node.right
             return node
         }
+        else if(node.right ===null){
+            node= node.left 
+            return node
+        }
+        let aux = this.findMinNode(node.right)
+        node.data =aux.data
+        node.right = this.removeNode(node.right,aux.data)
+        return node
     }
 }
 }
